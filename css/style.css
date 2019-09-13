@@ -19,6 +19,24 @@ body {
    background-color: #ffffff;
 }
 
+/* fix */
+
+body.modal-open {
+   position: absolute; 
+   overflow: hidden;
+   height: 100%;
+   width: 100%;
+}
+
+@media (max-width: 576px) {
+   body.modal-open {
+      position: fixed;
+   }
+
+}
+
+/* fix */
+
 .modal-open {
    overflow: hidden;
 }
@@ -1590,17 +1608,15 @@ input[type="submit"]:hover {
  .nav-opener {
    display: block;
 }
-
 .nav-drop {
-   overflow: hidden;
    position: fixed;
-   top: 0;
    left: 0;
    right: 0;
    bottom: 0;
-   z-index: 999;
-   color: #fff;
-   background: #E88781;
+   top: -70px;
+   transform: translateY(70px);
+   width: 100%;
+   background-color: #E99183;
 }
 
 .nav-active.nav-opener span,
