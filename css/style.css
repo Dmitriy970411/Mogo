@@ -1608,6 +1608,7 @@ input[type="submit"]:hover {
  .nav-opener {
    display: block;
 }
+
 .nav-drop {
    position: fixed;
    left: 0;
@@ -1615,7 +1616,9 @@ input[type="submit"]:hover {
    bottom: 0;
    top: -70px;
    transform: translateY(70px);
+   display: flex;
    width: 100%;
+   flex-direction: column;
    background-color: #E99183;
 }
 
